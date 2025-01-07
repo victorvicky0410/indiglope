@@ -13,7 +13,7 @@ import ProductsList from '../admin/ProductList/ProductsList.js';
 import AddProduct from '../admin/AddProducts/AddProduct.js';
 import OrdersList from '../admin/Orders/OrdersList.js'
 import PrivateRoute from '../PrivateRoute.js'
-import OrderSuccess from '../components/Ordersuccess/OrderSuccess.js'
+import OrderSuccess from '../components/ordersuccess/OrderSuccess.js'
 import OrderCancel from '../components/ordercancel/OrderCancel.js'
 
 const RouterRoutes = () => {
