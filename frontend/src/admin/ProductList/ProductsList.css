@@ -1,0 +1,324 @@
+/* Main container for products */
+.admin-products-list {
+  padding: 20px;
+  text-align: center;
+  margin-left: 10%;
+  width: 80%;
+}
+
+/* Table container */
+.admin-products-table-container {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.admin-products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Table Header */
+.admin-products-table th {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 1.admin-2em;
+}
+
+/* Table Data */
+.admin-products-table td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Row hover effect */
+.admin-products-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Product Image styling */
+.admin-product-image {
+  width: 50px; /* Fixed width for image */
+  height: 50px; /* Fixed height for image */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Actions Button Container */
+.admin-actions-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button Styling */
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.admin-9em;
+  transition: background-color 0.admin-3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Popup styles */
+.admin-edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.admin-5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.admin-1);
+  width: 300px;
+}
+
+.admin-popup-content h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.admin-popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-popup-content label {
+  margin-bottom: 10px;
+}
+
+.admin-popup-content input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.admin-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-popup-buttons button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-popup-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Styles for the image preview in the popup */
+.admin-image-preview {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.admin-strike-through {
+  text-decoration: line-through;
+  color: red; /* Optional: you can change the color to indicate a discount */
+}
+
+.admin-price {
+  font-size: 16px;
+}
+
+.admin-products-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* General Styles for the Edit Popup */
+.admin-edit-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  background-color: rgba(0, 0, 0, 0.admin-5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; /* Enable scrolling if content exceeds viewport */
+}
+
+/* Popup Content Container */
+.admin-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px; /* Adjusted width for desktop */
+  max-height: 90%; /* Limit height to 90% of the viewport */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.admin-1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto; /* Allow scrolling within the popup */
+}
+
+/* Form Layout with Side-by-Side Alignment */
+.admin-popup-content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+  gap: 15px; /* Gap between items */
+  width: 100%;
+}
+
+/* Ensure full width for textareas and file inputs */
+.admin-popup-content textarea,
+.admin-popup-content input[type="file"] {
+  grid-column: span 2; /* Span both columns */
+}
+
+/* Labels and Inputs */
+.admin-popup-content label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.admin-popup-content input,
+.admin-popup-content textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Image Preview Section */
+.admin-image-preview {
+  max-width: 50%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  grid-column: span 2; /* Ensure image preview spans full width */
+}
+
+/* Buttons Section */
+.admin-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.admin-popup-buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.admin-popup-buttons button:first-child {
+  background-color: #28a745; /* Save Changes Button */
+}
+
+.admin-popup-buttons button:first-child:hover {
+  background-color: #218838;
+}
+
+.admin-popup-buttons button:last-child {
+  background-color: #dc3545; /* Cancel Button */
+}
+
+.admin-popup-buttons button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 1024px) {
+  .admin-popup-content {
+    max-width: 500px; /* Adjust width for tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-popup-content {
+    width: 90%; /* Reduce width for mobile */
+    padding: 15px;
+    max-height: 85%; /* Slightly reduce height for mobile */
+  }
+
+  .admin-popup-content h3 {
+    font-size: 18px;
+  }
+
+  .admin-popup-content form {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .admin-popup-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .admin-popup-buttons button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+.admin-error {
+  color: red;
+  font-size: 0.admin-875rem;
+  margin-top: 0.admin-25rem;
+}
+
+.admin-edit-icon, .admin-delete-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.admin-edit-icon:hover, .admin-delete-icon:hover {
+  color: #007bff;  /* Change to blue on hover */
+}
+.admin-red-text {
+  color: red;
+}
+/* Add these styles to position the search bar in the top-right corner */
+.admin-search-bar-container {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.admin-search-bar-container input {
+  padding: 8px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+

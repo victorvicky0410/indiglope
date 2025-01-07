@@ -1,0 +1,66 @@
+.orders-list {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .orders-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .orders-list th,
+  .orders-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .orders-list th {
+    background-color: #f4f4f4;
+    color: #555;
+  }
+  
+  .orders-list tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  .orders-list tbody tr:hover {
+    background-color: #e8f4ff;
+  }
+  
+  /* Dropdown styles */
+  .orders-list select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Dropdown hover effect */
+  .orders-list select:hover {
+    border-color: #e08907;
+    background-color: #f0f8ff;
+  }
+  
+  /* Dropdown focus effect */
+  .orders-list select:focus {
+    border-color: #0cb300;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 136, 0, 0.5);
+  }
+  
